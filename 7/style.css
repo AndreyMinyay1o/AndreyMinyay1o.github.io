@@ -47,8 +47,15 @@ a:active{
     background-color: rgb(42, 0, 90);
     text-align: center;
 }
+#slidelinks {
+    background-color: #fd0130;
+}
+/*слайдер*/
+#slidelinks img{
+    border: 7px solid #fd0130;
 td,th {
     color:rgb(0, 0, 0);
+    
 }
 .odd {
 background-color: rgb(145, 119, 4);
