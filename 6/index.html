@@ -198,18 +198,70 @@
       </form>
     </div>  
   </div>        
-<div class="order-3 mt-lg-3 mb-3 mb-lg-0 text-center">
-    <form id="calc" class="pl-3">
-      <label>Цена: <br>
-        <input class="mt-1 form-control col-12" id="stoim" type="text">
-      </labeL> <br>
-      <label>Количество: <br>
-        <input class="mt-1 mb-3 form-control col-12" id="colvo" type="text">
-      </label><br>
+  <div class="tabs order-3 mt-lg-3 mb-3 mb-lg-0 text-center">
+          <form id="dices">
+            <label>программы:</label><br>
+            <select name="dice">
+              <option value="noDice">Не выбрано</option>
+              <option value="1">Word (30 рублей)</option>
+              <option value="2">Powerpoint (30 рублей)</option>
+              <option value="3">Excel (30 рублей)</option>
+              <option value="d10">Fl studio (30 рублей)</option>
+              <option value="4">Vegas studio (30 рублей)</option>
+              <option value="5">OBS (30 рублей)</option>
+              <option value="d100">Windows (7 дайсов) (200 рублей)</option>
+            </select>
 
-      <label>
-        <button type="button" id="but">Итог</button>
-      </label>
+            <div id="d10Dice">
+              <label>Вариация d10:</label><br>
+              <label><input type="checkbox" name="varDice">Единицы</label>
+              <label><input type="checkbox" name="varDice">Десятки</label>
+            </div>
+
+            <div id="radioDice">
+              <label>Материал (цена за дайс):</label><br>
+              <label><input type="radio" value="clear1" name="mater">Пластик (без наценки)</label>
+              <label><input type="radio" value="clear2" name="mater">Эпоксидная смола (+10)</label>
+              <label><input type="radio" value="clear3" name="mater">Дерево (+20)</label>
+              <label><input type="radio" value="clear4" name="mater">Металл (+50)</label>
+              <label><input type="radio" value="clear5" name="mater">Душа суслика (+100)</label>
+            </div>
+
+            <div id="sacDice">
+              <label>Дополнительно:</label><br>
+              <label><input type="checkbox" id="sacCube"> Мешочек (+250)</label>
+            </div>
+
+            <div id="mid">
+              <label>Количество: <br></label>
+              <center><input class="mt-1 form-control col-3" name="colDice" type="text"></center>
+              <br>
+
+            </div>
+
+            <div id="rezultDice"></div>
+          </form>
+        </div>
+
+        <div class="order-4 mt-lg-3 mb-3 mb-lg-0 text-center">
+          <form id="calc" class="pl-3">
+            <label>Стоимость товара: <br></labeL>
+            <center><input class="mt-1 form-control col-3" id="stoim" type="text"></center>
+            <br>
+            <label>Количество товаров: <br></label>
+            <center><input class="mt-1 form-control col-3" id="colvo" type="text"></center>
+            <br>
+        
+            <label>
+              <button type="button" id="but">Рассчитать</button>
+            </label>
+        
+            <div id="rezult"></div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
 
       <div id="rezult"></div>
     </form>
