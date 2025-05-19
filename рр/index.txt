@@ -4,7 +4,7 @@
             <TITLE>Моя первая домашняя страничка</TITLE>
             <style>
                 body {
-                    background-image: url('D:/рр/sand-dunes-white-5120x2880-21843.jpg');
+                    background-image: url('https://AndreyMinyay1o.github.io/рр/sand-dunes-white-5120x2880-21843.jpg');
                     background-size: cover;
                     background-position: center;
                 }
